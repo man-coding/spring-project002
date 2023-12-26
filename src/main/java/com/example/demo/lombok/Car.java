@@ -10,16 +10,13 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor   //디폴트 생성자
-@AllArgsConstructor  //모든 생성자 초기화
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Person {
-	
-	String name;
-	
-	int age;
+public class Car {
 
-	
-	
+	String model;
+	String company;
+	String color;
 
 }

@@ -1,5 +1,7 @@
 package com.example.demo.lombok;
 
+import java.time.LocalDate;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -10,16 +12,12 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-@NoArgsConstructor   //디폴트 생성자
-@AllArgsConstructor  //모든 생성자 초기화
+@NoArgsConstructor
+@AllArgsConstructor
 @Builder
-public class Person {
-	
-	String name;
-	
-	int age;
+public class Movie {
 
-	
-	
-
+	String title;
+	String director;
+	LocalDate releaseDate;
 }
